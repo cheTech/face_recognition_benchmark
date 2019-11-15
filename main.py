@@ -19,4 +19,4 @@ else:
 donald_encodings = face_recognition.face_encodings(donaldImg, donald_locations)
 biden_encodings = face_recognition.face_encodings(bidenImg, biden_locations)
 
-print("Test Ended!\nScore:%s." % (int((time.clock() - t0) * 1000)))
+print("Test Ended!\nScore:%s." % (abs(int((time.clock() - t0) * 1000) - 10000)))
